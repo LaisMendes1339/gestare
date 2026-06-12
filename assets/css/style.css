@@ -254,8 +254,9 @@ ul  { list-style: none; }
 .navbar__links-cta-item { display: none; }
 
 @media (max-width: 860px) {
-  /* Esconde links, CTA desktop e toggle; toggle vira flex no mobile */
-  .navbar__links, .navbar__cta { display: none !important; }
+  /* Esconde links e CTA no desktop; CTA nunca aparece no mobile */
+  .navbar__links { display: none; }
+  .navbar__cta { display: none !important; }
   .nav-toggle { display: flex; margin-left: auto; }
 
   /* Painel do menu aberto */
